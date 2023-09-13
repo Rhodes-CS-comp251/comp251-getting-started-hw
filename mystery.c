@@ -6,7 +6,7 @@ int main(int argc, char **argv) {
   if (argc < 2) return 0;
 
   for (h=t=argv[1]; *t; t++);
-  l = (--t-h)/2;
+  l = (t-- - h)/2;
 
   while (l--) {
      c   = *t;
