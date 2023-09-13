@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /* prototypes */
 void init(int a[], int s);
@@ -42,7 +43,7 @@ int max(int a[], int s) {
 int main(void) {
   int iarray[100];
 
-  sranddev(); // seed random number generator
+  srand(time(0)); // seed random number generator
 
   init(iarray, 100);
 
